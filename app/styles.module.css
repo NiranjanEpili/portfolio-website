@@ -1,0 +1,16 @@
+.scrollingText {
+  writing-mode: vertical-rl;
+  transform: rotate(0deg); /* Changed from 180deg to 0deg to make text right-side up */
+  animation: scrollDown 15s linear infinite;
+  padding-top: 100%;
+  padding-bottom: 100%;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%); /* Start from top */
+  }
+  100% {
+    transform: translateY(50%); /* Move to bottom */
+  }
+}
