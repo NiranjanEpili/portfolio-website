@@ -108,3 +108,45 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+  .writing-vertical-rl {
+    writing-mode: horizontal-tb; /* Make vertical text horizontal on mobile */
+  }
+  
+  /* Improve scroll indicator visibility on mobile */
+  .scroll-indicator {
+    display: none;
+  }
+  
+  /* Improve padding for mobile */
+  .section-mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Better spacing for text on small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: calc(2rem + 2vw) !important;
+    line-height: 1.1 !important;
+  }
+  
+  h2 {
+    font-size: calc(1.2rem + 1vw) !important;
+  }
+  
+  p {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Adjust animation behavior on mobile devices */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

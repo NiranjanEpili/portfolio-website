@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Space_Mono } from "next/font/google"
 import { LanguageProvider } from './contexts/LanguageContext';
+import CursorEffect from "@/components/CursorEffect";
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -13,7 +14,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Niranjan Epili - personal portfolio",
   description: "Google cybersecurity professional and ethical hacker",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${spaceMono.variable} font-mono`}>
         <LanguageProvider>
+          <CursorEffect />
           {children}
         </LanguageProvider>
       </body>
