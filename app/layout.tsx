@@ -16,8 +16,14 @@ export const metadata: Metadata = {
     default: "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
     template: "%s | Niranjan Epili"
   },
-  description: "Expert in AI/ML, cybersecurity, and entrepreneurship with proven projects and Google certifications. Portfolio of Niranjan Epili showing skills in ethical hacking and startup leadership.",
-  keywords: ["Niranjan Epili", "AI/ML Engineer", "Cybersecurity Expert", "Portfolio", "Ethical Hacking", "Startup Founder", "Google Cybersecurity"],
+  description: "Expert in AI/ML engineering, cybersecurity, ethical hacking, and entrepreneurship with Google certifications. Portfolio showcasing innovative projects and professional skills in software development.",
+  keywords: [
+    "Niranjan Epili", "AI Engineer", "ML Engineer", "Machine Learning", 
+    "Cybersecurity Expert", "Ethical Hacking", "Google Certified", 
+    "Portfolio Website", "Software Developer", "Startup Founder", 
+    "Tech Entrepreneur", "Full Stack Developer", "Security Researcher", 
+    "Python Developer", "React Developer", "Next.js", "Web Security"
+  ],
   authors: [{ name: "Niranjan Epili", url: "https://www.niranjanepili.me" }],
   creator: "Niranjan Epili",
   publisher: "Niranjan Epili",
@@ -28,10 +34,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.niranjanepili.me",
+    languages: {
+      'en-US': 'https://www.niranjanepili.me',
+    },
   },
+  category: 'technology',
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
@@ -41,48 +52,65 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
-    description: "Expert in AI/ML, cybersecurity, and entrepreneurship with proven projects and Google certifications.",
+    type: "website",
+    locale: "en_US",
     url: "https://www.niranjanepili.me",
     siteName: "Niranjan Epili Portfolio",
-    locale: "en_US",
-    type: "website",
+    title: "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
+    description: "Expert in AI/ML engineering, cybersecurity, ethical hacking with Google certifications. Discover my innovative projects and professional skills.",
     images: [
       {
         url: "https://www.niranjanepili.me/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Niranjan Epili Portfolio",
+        alt: "Niranjan Epili - AI/ML Engineer & Cybersecurity Expert",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
-    description: "Expert in AI/ML, cybersecurity, and entrepreneurship with proven projects and Google certifications.",
+    description: "Expert in AI/ML engineering, cybersecurity, ethical hacking with Google certifications.",
     creator: "@niranjanepili",
     images: ["https://www.niranjanepili.me/twitter-image.png"],
   },
   verification: {
-    google: "su0N2g13YZIe1s8FQqquO2FMdrDJaBq0BqWl9h0Aljg", // Google site verification
+    google: "su0N2g13YZIe1s8FQqquO2FMdrDJaBq0BqWl9h0Aljg",
+    yandex: "verification_code",
+    yahoo: "verification_code",
+    other: {
+      me: ["mailto:niranjanepili@outlook.in", "https://linkedin.com/in/niranjanepili"]
+    }
+  },
+  appLinks: {
+    web: {
+      url: "https://www.niranjanepili.me",
+    },
   },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
     ],
     shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
-  },
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/apple-touch-icon-precomposed.png',
+      }
+    ],
+  }
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "#000" },
-  ],
+  themeColor: '#ff5722',
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

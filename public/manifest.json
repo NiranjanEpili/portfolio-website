@@ -1,0 +1,59 @@
+{
+  "name": "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
+  "short_name": "Niranjan Epili",
+  "description": "Portfolio of Niranjan Epili - AI/ML Engineer & Cybersecurity Expert",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2e9dc",
+  "theme_color": "#ff5722",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot1.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot2.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View my portfolio projects",
+      "url": "/projects",
+      "icons": [{ "src": "/icons/projects.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contact Niranjan Epili",
+      "url": "/contact",
+      "icons": [{ "src": "/icons/contact.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["technology", "portfolio", "cybersecurity", "ai", "ml"]
+}
