@@ -191,7 +191,7 @@ export default function Home() {
                   style={{ maxWidth: '300px' }}
                 >
                   <Image
-                    src="https://i.ibb.co/7xnRj2cD/Untitled-design-20250506-134959-0000.png"
+                    src="https://i.ibb.co/CpmwwVnW/Whats-App-Image-2025-05-07-at-1-59-17-PM.jpg"
                     alt="Niranjan Epili"
                     fill
                     priority={true}
