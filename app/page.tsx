@@ -9,6 +9,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import FloatingElement from "@/components/FloatingElement";
 import { motion } from "framer-motion";
 import MobileNavDrawer from "@/components/MobileNavDrawer";
+import { PersonJsonLd, WebsiteJsonLd, ProjectsJsonLd, FAQsJsonLd } from './components/JsonLd';
 
 export default function Home() {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -18,6 +19,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#f2e9dc] font-mono text-black relative">
+      {/* Add all JSON-LD components for complete schema markup */}
+      <PersonJsonLd />
+      <WebsiteJsonLd />
+      <ProjectsJsonLd />
+      <FAQsJsonLd />
+      
       {/* Mobile Navigation Drawer */}
       <MobileNavDrawer isOpen={mobileNavOpen} onClose={() => setMobileNavOpen(false)} />
       
