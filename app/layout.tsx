@@ -14,7 +14,15 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Niranjan Epili - personal portfolio",
   description: "Google cybersecurity professional and ethical hacker",
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  }
 }
 
 export default function RootLayout({
