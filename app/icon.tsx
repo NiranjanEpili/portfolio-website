@@ -18,14 +18,13 @@ export default function Icon() {
           justifyContent: 'center',
           color: 'white',
           fontWeight: 'bold',
-          fontFamily: 'sans-serif' // Changed from monospace to sans-serif
+          borderRadius: '0', // Square shape for a modern look
+          fontFamily: 'system-ui, sans-serif', // Using a bolder system font
         }}
       >
         NE_
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }

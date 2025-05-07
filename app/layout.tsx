@@ -66,6 +66,14 @@ export const metadata: Metadata = {
   verification: {
     google: "su0N2g13YZIe1s8FQqquO2FMdrDJaBq0BqWl9h0Aljg", // Google site verification
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export const viewport: Viewport = {
