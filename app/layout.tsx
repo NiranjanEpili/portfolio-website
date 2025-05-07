@@ -14,15 +14,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.niranjanepili.me"),
   title: {
     default: "Niranjan Epili | AI/ML Engineer & Cybersecurity Expert",
-    template: "%s | Niranjan Epili"
+    template: "Niranjan Epili | %s"
   },
-  description: "Expert in AI/ML engineering, cybersecurity, ethical hacking, and entrepreneurship with Google certifications. Portfolio showcasing innovative projects and professional skills in software development.",
+  description: "Niranjan Epili is an expert in AI/ML engineering, cybersecurity, and entrepreneurship with Google certifications. Visit Niranjan Epili's professional portfolio showcasing innovative projects and technical skills.",
   keywords: [
-    "Niranjan Epili", "AI Engineer", "ML Engineer", "Machine Learning", 
+    "Niranjan Epili", "Niranjan", "Epili", 
+    "AI Engineer", "ML Engineer", "Machine Learning", 
     "Cybersecurity Expert", "Ethical Hacking", "Google Certified", 
-    "Portfolio Website", "Software Developer", "Startup Founder", 
-    "Tech Entrepreneur", "Full Stack Developer", "Security Researcher", 
-    "Python Developer", "React Developer", "Next.js", "Web Security"
+    "Portfolio", "Software Developer", "Startup Founder", 
+    "Tech Entrepreneur", "Full Stack Developer", "Security Researcher"
   ],
   authors: [{ name: "Niranjan Epili", url: "https://www.niranjanepili.me" }],
   creator: "Niranjan Epili",

@@ -4,11 +4,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.niranjanepili.me';
   const currentDate = new Date().toISOString();
   
-  // Get the date one week ago for recently updated pages
-  const oneWeekAgo = new Date();
-  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-  const recentDate = oneWeekAgo.toISOString();
-  
   return [
     {
       url: baseUrl,
@@ -18,52 +13,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: recentDate,
+      lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/projects`,
-      lastModified: currentDate,  // Projects page is updated frequently
+      lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: recentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,  // Blog is updated frequently
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/skills`,
-      lastModified: recentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    // Individual project pages
-    {
       url: `${baseUrl}/projects/footprintx`,
-      lastModified: recentDate,
+      lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/projects/diksha-collection`,
-      lastModified: recentDate,
+      lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/projects/ncompany-inc`,
-      lastModified: recentDate, 
+      lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/skills`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
     }
   ];
 }

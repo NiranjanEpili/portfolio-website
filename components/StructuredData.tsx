@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-export function PersonJsonLd() {
+export function PersonStructuredData() {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -16,15 +16,18 @@ export function PersonJsonLd() {
     "@type": "Person",
     "@id": "https://www.niranjanepili.me/#person",
     "name": "Niranjan Epili",
+    "givenName": "Niranjan",
+    "familyName": "Epili",
+    "alternateName": "Niranjan Epili",
     "url": "https://www.niranjanepili.me",
     "image": {
       "@type": "ImageObject",
-      "url": "https://www.niranjanepili.me/profile-image.jpg",
+      "url": "https://www.niranjanepili.me/niranjan-epili-profile.jpg",
       "width": "512",
       "height": "512"
     },
-    "jobTitle": "AI/ML Engineer and Cybersecurity Expert",
-    "description": "AI/ML Engineer, Cybersecurity Expert and Startup Founder with expertise in ethical hacking and software development",
+    "jobTitle": ["AI/ML Engineer", "Cybersecurity Expert"],
+    "description": "Niranjan Epili is an AI/ML Engineer and Cybersecurity Expert with expertise in ethical hacking and software development",
     "email": "niranjanepili@outlook.in",
     "telephone": "+918268310971",
     "sameAs": [
@@ -44,10 +47,7 @@ export function PersonJsonLd() {
       "Web Development",
       "React",
       "Next.js",
-      "Python",
-      "Cloud Computing",
-      "Entrepreneurship",
-      "Startup Management"
+      "Python"
     ],
     "alumniOf": [{
       "@type": "EducationalOrganization",
@@ -57,12 +57,7 @@ export function PersonJsonLd() {
     "worksFor": [{
       "@type": "Organization",
       "name": "NCompany Inc",
-      "url": "https://www.ncompanyinc.tech/",
-      "@id": "https://www.ncompanyinc.tech/#organization"
-    }, {
-      "@type": "Organization",
-      "name": "Elevate.X",
-      "url": "https://www.elevatex.com/"
+      "url": "https://www.ncompanyinc.tech/"
     }],
     "hasCredential": [{
       "@type": "EducationalOccupationalCredential",
@@ -72,15 +67,7 @@ export function PersonJsonLd() {
         "@type": "Organization",
         "name": "Google"
       }
-    }],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "India"
-    },
-    "nationality": {
-      "@type": "Country",
-      "name": "India"
-    }
+    }]
   };
 
   return (
@@ -91,7 +78,7 @@ export function PersonJsonLd() {
   );
 }
 
-export function WebsiteJsonLd() {
+export function WebsiteStructuredData() {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -117,29 +104,11 @@ export function WebsiteJsonLd() {
       "@type": "Person",
       "@id": "https://www.niranjanepili.me/#person"
     },
-    "copyrightHolder": {
-      "@type": "Person",
-      "@id": "https://www.niranjanepili.me/#person"
-    },
-    "copyrightYear": "2025",
-    "datePublished": "2023-01-01T12:00:00+00:00",
-    "dateModified": new Date().toISOString().split('T')[0],
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://www.niranjanepili.me/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
-    },
-    "keywords": [
-      "AI/ML Engineer", 
-      "Cybersecurity Expert", 
-      "Ethical Hacking", 
-      "Portfolio", 
-      "Startup Founder", 
-      "Google Cybersecurity",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Niranjan Epili"
-    ]
+    }
   };
 
   return (
@@ -150,7 +119,7 @@ export function WebsiteJsonLd() {
   );
 }
 
-export function ProjectsJsonLd() {
+export function ProjectStructuredData() {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -167,45 +136,39 @@ export function ProjectsJsonLd() {
         "@type": "SoftwareSourceCode",
         "position": 1,
         "name": "Diksha Collection - Jewelry Store",
-        "description": "Full-stack jewelry e-commerce website with custom UI/UX design, responsive frontend, and complete backend integration. Built primarily with TypeScript.",
+        "description": "Full-stack jewelry e-commerce website with custom UI/UX design, responsive frontend, and complete backend integration.",
         "programmingLanguage": "TypeScript",
         "codeRepository": "https://github.com/NiranjanEpili/diksha-collection",
         "url": "https://dikshacollection.vercel.app/",
         "author": {
           "@type": "Person",
           "@id": "https://www.niranjanepili.me/#person"
-        },
-        "dateCreated": "2023-04-15",
-        "keywords": ["e-commerce", "jewelry", "typescript", "frontend", "backend", "ui/ux"]
+        }
       },
       {
         "@type": "SoftwareSourceCode",
         "position": 2,
         "name": "NCompany Inc - Startup Website",
-        "description": "Designed and developed the official website for my own technology startup, featuring modern UI, responsive design, and interactive elements.",
+        "description": "Official website for my tech startup, featuring modern UI design and responsive interfaces.",
         "programmingLanguage": "JavaScript",
         "url": "https://www.ncompanyinc.tech/",
         "author": {
           "@type": "Person",
           "@id": "https://www.niranjanepili.me/#person"
-        },
-        "dateCreated": "2022-10-02",
-        "keywords": ["startup", "company website", "tech company", "modern UI", "responsive design"]
+        }
       },
       {
         "@type": "SoftwareSourceCode",
         "position": 3,
         "name": "FootprintX - Reconnaissance Tool",
-        "description": "Developed a Telegram bot that performs comprehensive website enumeration and information gathering, generating detailed PDF reports for cybersecurity analysis.",
+        "description": "Telegram bot for comprehensive website enumeration and information gathering with PDF report generation.",
         "programmingLanguage": "Python",
         "codeRepository": "https://github.com/NiranjanEpili/FootprintX",
         "url": "https://t.me/Footprintxbot",
         "author": {
           "@type": "Person",
           "@id": "https://www.niranjanepili.me/#person"
-        },
-        "dateCreated": "2023-01-20",
-        "keywords": ["cybersecurity", "reconnaissance", "information gathering", "telegram bot", "python"]
+        }
       }
     ]
   };
@@ -218,7 +181,7 @@ export function ProjectsJsonLd() {
   );
 }
 
-export function FAQsJsonLd() {
+export function FAQStructuredData() {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -251,20 +214,6 @@ export function FAQsJsonLd() {
         "@type": "Answer",
         "text": "You can contact Niranjan through email at niranjanepili@outlook.in, by phone at +918268310971, or through the contact form on his website."
       }
-    }, {
-      "@type": "Question",
-      "name": "What projects has Niranjan worked on?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Niranjan has worked on various projects including FootprintX (a cybersecurity reconnaissance tool), Diksha Collection (an e-commerce platform), and NCompany Inc's website (a tech startup). His portfolio showcases his expertise in both technical development and design."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Does Niranjan offer remote work services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Niranjan offers remote services in AI/ML development, cybersecurity consulting, and web development. He works with clients globally, providing professional solutions regardless of geographical location."
-      }
     }]
   };
 
@@ -276,7 +225,7 @@ export function FAQsJsonLd() {
   );
 }
 
-export function BreadcrumbJsonLd({ items }) {
+export function BreadcrumbStructuredData({ items }) {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -300,46 +249,6 @@ export function BreadcrumbJsonLd({ items }) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
-    />
-  );
-}
-
-export function WebPageJsonLd({ type = "WebPage", name, description }) {
-  const [mounted, setMounted] = useState(false);
-  
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-  
-  if (!mounted) return null;
-  
-  const webpageData = {
-    "@context": "https://schema.org",
-    "@type": type,
-    "name": name,
-    "description": description,
-    "url": "https://www.niranjanepili.me",
-    "author": {
-      "@type": "Person",
-      "@id": "https://www.niranjanepili.me/#person"
-    },
-    "publisher": {
-      "@type": "Person",
-      "@id": "https://www.niranjanepili.me/#person"
-    },
-    "inLanguage": "en-US",
-    "isPartOf": {
-      "@type": "WebSite",
-      "@id": "https://www.niranjanepili.me/#website"
-    },
-    "datePublished": "2023-01-01T12:00:00+00:00",
-    "dateModified": new Date().toISOString().split('T')[0]
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageData) }}
     />
   );
 }
