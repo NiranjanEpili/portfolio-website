@@ -175,9 +175,6 @@ export default function Home() {
                     Engineering student and tech entrepreneur with expertise in artificial intelligence, machine learning, and{" "}
                     <span className="underline">advanced cybersecurity systems</span>. Building innovative solutions at the intersection of technology and business.
                   </p>
-                  <p className="text-sm sm:text-base leading-normal">
-                    Leveraging deep technical knowledge and entrepreneurial vision to identify vulnerabilities, create secure digital environments, and develop next-generation AI-powered applications for tomorrow's challenges.
-                  </p>
                 </motion.div>
                 
                 <motion.div 
