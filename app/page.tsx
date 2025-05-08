@@ -155,7 +155,7 @@ export default function Home() {
 
           {/* Main content */}
           <main>
-            <h1 className="sr-only">Niranjan Epili - AI/ML Engineer & Cybersecurity Expert</h1>
+            <h1 className="sr-only">Niranjan Epili - AI/ML Engineer & Cybersecurity</h1>
             
             {/* Hero section - improved for mobile */}
             <section id="hero" aria-label="Introduction of Niranjan Epili">
@@ -170,9 +170,6 @@ export default function Home() {
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                     Hi, I'm <span className="text-primary">Niranjan Epili</span>
                   </h2>
-                  <p className="text-xl md:text-2xl mb-6">
-                    AI/ML Engineer & Cybersecurity Expert
-                  </p>
                   <h2 className="text-xl sm:text-2xl mb-3 font-bold">AI/ML Engineer | Cybersecurity Expert | Startup Founder_</h2>
                   <p className="mb-4 text-sm sm:text-base leading-normal">
                     Engineering student and tech entrepreneur with expertise in artificial intelligence, machine learning, and{" "}
