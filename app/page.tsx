@@ -184,13 +184,6 @@ export default function Home() {
                   className="relative w-full sm:w-[30%] h-[300px] sm:h-[500px] mx-auto sm:mr-0" 
                   style={{ maxWidth: '300px' }}
                 >
-                  <Image
-                    src="https://i.ibb.co/CpmwwVnW/Whats-App-Image-2025-05-07-at-1-59-17-PM.jpg"
-                    alt="Niranjan Epili"
-                    fill
-                    priority={true}
-                    className="object-cover"
-                  />
                 </motion.div>
               </AnimatedSection>
             </section>
